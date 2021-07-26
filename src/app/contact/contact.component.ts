@@ -8,7 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ContactComponent implements OnInit {
 
   constructor() { }
-  @Input() contactHome!:boolean
+  @Input() contactHide:boolean = true
+  @Input() contactShow:boolean = false
   ngOnInit(): void {
     
   }

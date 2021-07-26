@@ -8,7 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class TrainerComponent implements OnInit {
 
   constructor() { }
-  @Input() trainerHome!:boolean
+  @Input() trainerHide:boolean = true
+  @Input() trainerShow:boolean = false
   ngOnInit(): void {
   }
 

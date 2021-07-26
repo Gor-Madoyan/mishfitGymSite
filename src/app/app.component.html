@@ -26,10 +26,10 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarsExample04">
                        <ul class="navbar-nav mr-auto">
-                          <li class="nav-item active">
+                          <li class="nav-item active" routerLinkActive = 'active' [routerLinkActiveOptions] = "{exact:true}">
                              <a class="nav-link"  routerLink = '/home'>Home</a>
                           </li>
-                          <li class="nav-item">
+                          <li class="nav-item"  >
                              <a class="nav-link" routerLink = '/about'>About</a>
                           </li>
                           <li class="nav-item">
@@ -67,13 +67,13 @@
              <div class="col-md-3">
                 <h3>Link Menu</h3>
                 <ul class="link_menu">
-                   <li><a href="#">Home</a></li>
-                   <li><a href="#" routerLink = '/about'> About</a></li>
-                   <li><a href="service.html">Services</a></li>
-                   <li><a href="news.html">News</a></li>
-                   <li><a href="trainer.html">Trainer</a></li>     
-                   <li><a href="gallery.html">Gallery</a></li>
-                   <li><a href="contact.html">Contact Us</a></li>
+                   <li><a routerLink = '/home'>Home</a></li>
+                   <li><a routerLink = '/about'> About</a></li>
+                   <li><a routerLink = '/service'>Services</a></li>
+                   <li><a routerLink = '/news'>News</a></li>
+                   <li><a routerLink = '/trainer'>Trainer</a></li>     
+                   <li><a routerLink = '/gallery'>Gallery</a></li>
+                   <li><a routerLink = '/contact'>Contact Us</a></li>
                 </ul>
              </div>
              <div class=" col-md-5">

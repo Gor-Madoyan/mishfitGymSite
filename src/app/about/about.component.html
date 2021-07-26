@@ -1,28 +1,5 @@
-    <!-- about  for Home-->
-    <div class="about" *ngIf = 'aboutHome; else aboutAbout'>
-      <div class="container">
-         <div class="row d_flex">
-            <div class="col-md-5">
-               <div class="titlepage">
-                  <h2>About Fitness</h2>
-                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using  </p>
-                  <a class="read_more" href="Javascript:void(0)">Raed More</a>
-               </div>
-            </div>
-            <div class="col-md-7">
-               <div class="about_img">
-                  <figure><img src="assets/images/about.jpg" alt="#"/></figure>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- end about for Home -->
- 
-
-<ng-template #aboutAbout>
  <!-- about for about -->
- <div class="back_re" >
+ <div class="back_re" *ngIf = 'aboutshow'>
          <div class="container">
             <div class="row">
                <div class="col-md-12">
@@ -32,13 +9,14 @@
                </div>
             </div>
          </div>
-      </div>
+</div>
  <!-- about -->
  <div class="about">
     <div class="container">
        <div class="row d_flex">
           <div class="col-md-5">
              <div class="titlepage">
+               <h2  *ngIf = 'abouthide' >About Fitness</h2>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using  </p>
                 <a class="read_more" href="Javascript:void(0)">Raed More</a>
              </div>
@@ -51,7 +29,7 @@
        </div>
     </div>
  </div>
-</ng-template>
+<!-- </ng-template> -->
  <!-- end about -->
 
 

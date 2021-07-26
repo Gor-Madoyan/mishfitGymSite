@@ -9,7 +9,8 @@ export class NewsComponent implements OnInit {
 
   constructor() { }
   
-  @Input() newsHome!:boolean
+  @Input() newsHide:boolean = true
+  @Input() newsShow:boolean = false
   ngOnInit(): void {
   }
 

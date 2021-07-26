@@ -9,7 +9,8 @@ export class ServiceComponent implements OnInit {
 
   constructor() { }
 
-  @Input() serviceHome!:boolean
+  @Input() hideService:boolean = false
+  @Input() showService:boolean = true
   ngOnInit(): void {
   }
 

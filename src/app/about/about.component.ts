@@ -11,8 +11,8 @@ export class AboutComponent implements OnInit {
   constructor() { }
 
 
-  @Input() aboutHome!:boolean
-
+  @Input() abouthide:boolean = false
+  @Input() aboutshow: boolean= true
   ngOnInit(): void {
   }
 

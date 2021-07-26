@@ -36,7 +36,7 @@
                      <span>construction</span>
                      <h1>Stewart Fitness </h1>
                      <p> Lorem Ipsum available, but the majority have suffered lteration in some.</p>
-                     <a class="read_more" href="contact.html">Contact us</a>
+                     <a class="read_more" routerLink = '/contact'>Contact us</a>
                   </div>
                </div>
             </div>
@@ -47,14 +47,14 @@
 
 
 
-<app-about [aboutHome] = 'true'></app-about>
-<app-service [serviceHome] = 'true'></app-service>
-<app-news [newsHome] = 'true'></app-news>
-<app-trainer [trainerHome] ='true'></app-trainer>
-<app-gallery [galleryHome] = 'true'></app-gallery>
-<app-contact [contactHome] = 'true'></app-contact>
+<app-about [abouthide] = "true" [aboutshow] = "false"></app-about>
+<app-service [hideService] = 'true' [showService] = 'false'></app-service>
+<app-news [newsHide] = 'false' [newsShow] = 'true'></app-news>
+<app-trainer [trainerHide] ='false'  [trainerShow] = 'true'></app-trainer>
+<app-gallery [hideGallery] = 'false' [showGallery] = 'true'></app-gallery>
+<app-contact [contactHide] = 'false' [contactShow] = 'true'></app-contact>
 
-
+   
 
 
 

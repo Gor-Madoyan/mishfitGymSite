@@ -8,7 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class GalleryComponent implements OnInit {
 
   constructor() { }
-  @Input() galleryHome!:boolean
+  @Input() hideGallery:boolean = true
+  @Input() showGallery:boolean = false
   ngOnInit(): void {
   }
 

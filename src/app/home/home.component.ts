@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  @Input() newsHome!:boolean
+
   constructor() { }
 
   ngOnInit(): void {
